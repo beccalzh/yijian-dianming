@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一鍵點名｜活動邀請卡批次加名服務</title>
+<meta name="description" content="一鍵點名是 LINE 上的活動邀請卡工具：上傳活動主視覺、貼上客人名單，自動產生每位客人的專屬邀請卡。">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{--bg:#141416;--panel:#222224;--line:#343437;--text:#ecebe8;--mute:#a3a29f;--gold:#D4B078}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;line-height:1.75;font-size:15px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  header{padding:42px 0 26px;text-align:center}
+  .brand{color:var(--gold);letter-spacing:.4em;font-size:13px;padding-left:.4em}
+  h1{font-size:30px;margin:10px 0 8px;letter-spacing:.04em}
+  .lead{color:var(--mute);margin:0 auto;max-width:520px}
+  .cta{display:inline-block;margin-top:20px;background:var(--gold);color:#18181a;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:12px}
+  nav{position:sticky;top:0;z-index:5;background:#18181af2;border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+  nav .wrap{display:flex;gap:16px;overflow-x:auto;white-space:nowrap;padding-top:10px;padding-bottom:10px}
+  nav a{color:var(--mute);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--text)}
+  section{padding:30px 0 6px;scroll-margin-top:48px}
+  h2{font-size:20px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+  h2::before{content:'';width:4px;height:18px;background:var(--gold);border-radius:2px}
+  h3{font-size:16px;margin:18px 0 6px}
+  p,li{color:#d6d4d0}
+  ol,ul{padding-left:22px}
+  li{margin:4px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:12px 0}
+  .steps{display:grid;gap:10px;grid-template-columns:1fr}
+  @media(min-width:620px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .step b{display:block;color:var(--gold);font-size:13px}
+  .step span{font-size:14px}
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  th,td{padding:11px 6px;white-space:nowrap;border-bottom:1px solid var(--line);text-align:left}
+  th{color:var(--mute);font-weight:500;font-size:13px}
+  td.num{text-align:right}
+  .tag{display:inline-block;white-space:nowrap;font-size:12px;background:var(--gold);color:#18181a;border-radius:999px;padding:0 8px;margin-left:6px;font-weight:700}
+  .muted{color:var(--mute);font-size:13.5px}
+  .fill{background:#5a4a1f;color:#ffe6a8;border-radius:4px;padding:0 4px}
+  .shot{margin:16px 0;text-align:center}
+  .shot img{width:100%;border-radius:14px;border:1px solid var(--line)}
+  .shot.narrow img{max-width:340px}
+  .shot figcaption{color:var(--mute);font-size:13px;margin-top:6px}
+  .prod{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:12px 0}
+  .prod h3{margin:4px 0 4px;font-size:16px}
+  .prod .price{color:var(--gold);font-size:22px;font-weight:700}
+  .prod .price small{color:var(--mute);font-size:13px;font-weight:400;margin-left:6px}
+  .prod ul{margin:8px 0 4px}
+  footer{margin-top:40px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:13px;text-align:center}
+  a{color:var(--gold)}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="brand">一鍵點名</div>
+  <h1>活動邀請卡，一次幫每位客人加上名字</h1>
+  <p class="lead">上傳做好的活動主視覺、貼上客人名單，幾百張專屬邀請卡一次完成，存到相簿就能直接傳給客人。全程在 LINE 上操作，不用下載 App。</p>
+  <a class="cta" href="https://line.me/R/ti/p/@939nurdq">加 LINE 免費試用 3 檔活動</a>
+</header>
+
+<nav><div class="wrap">
+  <a href="#service">服務內容</a><a href="#products">商品資訊</a><a href="#payment">付款與開通</a><a href="#refund">退款政策</a><a href="#terms">服務條款</a><a href="#privacy">隱私權政策</a><a href="#contact">聯絡我們</a>
+</div></nav>
+
+<main class="wrap">
+  <section id="service">
+    <h2>服務內容</h2>
+    <p>一鍵點名是提供給餐廳、酒吧、活動主辦等店家使用的線上工具。店家辦活動時，常需要傳送印有客人名字的邀請卡；一張一張手動修改很花時間。一鍵點名會自動判斷主視覺上適合放名字的位置與字體，並依名單批次產生每位客人的邀請卡。</p>
+    <div class="steps">
+      <div class="step"><b>1. 傳主視覺</b><span>在 LINE 傳一張做好的活動邀請卡圖片</span></div>
+      <div class="step"><b>2. AI 排版</b><span>自動找出放名字的位置，挑選搭配的字體</span></div>
+      <div class="step"><b>3. 貼名單</b><span>一行一個名字，名單人數不限</span></div>
+      <div class="step"><b>4. 存到相簿</b><span>一次存好全部邀請卡，再傳給客人</span></div>
+    </div>
+    <figure class="shot"><img src="showcase.jpg" alt="一張活動主視覺，自動產生每位客人一張印有名字的專屬邀請卡（示意範例）"><figcaption>使用範例：1 張主視覺 → 每位客人一張專屬邀請卡（圖中店名、活動與姓名皆為示意）</figcaption></figure>
+    <figure class="shot narrow"><img src="editor.jpg" alt="一鍵點名的編輯畫面：自動找出放名字的候選位置，可調整位置、字體與大小"><figcaption>實際操作畫面：系統自動找出放名字的位置，也可以自己拖曳調整、換字體</figcaption></figure>
+    <p class="muted">本服務為線上數位服務，不提供實體商品，也不經手店家與其客人之間的任何交易。</p>
+  </section>
+
+  <section id="products">
+    <h2>商品資訊</h2>
+    <p>本服務販售的商品是「<b>活動額度</b>」，以「場」計算：<b>1 場＝1 檔活動＝1 張主視覺</b>。使用 1 場額度，就能把 1 張活動主視覺做成名單上每位客人的專屬邀請卡，<b>名單人數不限</b>；之後同一張主視覺臨時加人，也不會再扣額度。</p>
+    <figure class="shot"><img src="plans.png" alt="一鍵點名方案：1 場 NT$149、5 場 NT$590、12 場 NT$1,190"><figcaption>方案一覽</figcaption></figure>
+
+    <div class="prod">
+      <h3>一鍵點名 活動額度 5 場（邀請卡批次加名服務）<span class="tag">最多人選</span></h3>
+      <div class="price">NT$590<small>（含稅，平均每場 NT$118）</small></div>
+      <ul>
+        <li><b>內容：</b>5 場活動額度，可用於 5 檔不同的活動（5 張不同的主視覺）。</li>
+        <li><b>每場可做：</b>名單上每位客人一張印有名字的邀請卡，人數不限；成品為 JPG 圖片，可一次存到手機相簿。</li>
+        <li><b>包含功能：</b>AI 自動判斷放名字的位置與字體（每張主視覺最多 5 次）、手動調整位置／大小／角度、9 種字體與 5 種底板、名字前後可加稱謂（如「Dear」「貴賓」）。</li>
+        <li><b>使用期限：</b>無期限，用完為止。</li>
+        <li><b>適合：</b>每月辦 1～2 檔活動的店家，約可使用 3～5 個月。</li>
+      </ul>
+    </div>
+    <div class="prod">
+      <h3>一鍵點名 活動額度 12 場（邀請卡批次加名服務）</h3>
+      <div class="price">NT$1,190<small>（含稅，平均每場約 NT$99）</small></div>
+      <ul>
+        <li><b>內容：</b>12 場活動額度，功能與 5 場方案相同。</li>
+        <li><b>使用期限：</b>無期限。</li>
+        <li><b>適合：</b>活動較多、想要最低單價的店家，約一年份。</li>
+      </ul>
+    </div>
+    <div class="prod">
+      <h3>一鍵點名 活動額度 1 場（邀請卡批次加名服務）</h3>
+      <div class="price">NT$149<small>（含稅）</small></div>
+      <ul>
+        <li><b>內容：</b>1 場活動額度，功能與 5 場方案相同。</li>
+        <li><b>適合：</b>偶爾辦活動，或想先付費試試看的店家。</li>
+      </ul>
+    </div>
+    <div class="prod">
+      <h3>免費試用</h3>
+      <div class="price">NT$0</div>
+      <ul><li>每個 LINE 帳號可免費使用 3 場，功能與付費方案相同，沒有使用期限。</li></ul>
+    </div>
+
+    <h3>如何購買</h3>
+    <ol>
+      <li>加入一鍵點名 LINE 官方帳號 <a href="https://line.me/R/ti/p/@939nurdq">@939nurdq</a>。</li>
+      <li>在聊天室點選單的「方案購買」，或輸入「購買」，選擇方案。</li>
+      <li>依畫面取得轉帳帳號完成付款，系統確認後自動開通，並以 LINE 通知。</li>
+    </ol>
+  </section>
+
+  <section id="payment">
+    <h2>付款與開通</h2>
+    <ul>
+      <li><b>付款方式：</b>ATM／網路銀行轉帳。在 LINE 選擇方案後，系統會產生這筆訂單專屬的轉帳帳號，3 天內有效。</li>
+      <li><b>開通時間：</b>付款完成後系統自動開通，通常在數分鐘內，並以 LINE 通知；若需人工確認，於 1 個工作天內開通。</li>
+      <li><b>交付方式：</b>本服務為線上數位服務，開通後即可在 LINE 上使用，沒有實體出貨。</li>
+      <li><b>發票：</b>本服務為個人經營，不開立統一發票；如需收據，請在 LINE 告知。</li>
+    </ul>
+  </section>
+
+  <section id="refund">
+    <h2>退款政策</h2>
+    <ol>
+      <li>購買後 <b>7 天內</b>，且該次購買的場數<b>尚未使用</b>：全額退款。</li>
+      <li>已開始使用：已使用的場數以單場價 NT$149 計算，扣除後退還餘額。例如購買 5 場（NT$590）並使用 1 場，退還 NT$441。</li>
+      <li>購買超過 <b>30 天</b>後不受理退款，未使用的場數仍可繼續使用，沒有期限。</li>
+      <li>因本服務系統故障而無法正常使用時，我們會補回受影響的場數；若您仍希望退款，將全額退還該次購買金額。</li>
+      <li>申請方式：在一鍵點名的 LINE 官方帳號留言「申請退款」，並提供退款帳戶。確認後 7 個工作天內以轉帳退回。</li>
+    </ol>
+    <p class="muted">本服務屬於線上提供的數位內容服務，開始使用後依前述規則辦理，不另適用七日解除契約之規定。</p>
+  </section>
+
+  <section id="terms">
+    <h2>服務條款</h2>
+    <h3>一、服務提供者</h3>
+    <p>本服務由 林子涵（以下稱「我們」）以個人身分經營，使用者以 LINE 帳號使用本服務，即表示同意本條款。</p>
+    <h3>二、帳號</h3>
+    <ul>
+      <li>每個 LINE 帳號為一個使用帳號，購買的場數僅限該帳號使用，不得轉讓。</li>
+      <li>請妥善保管自己的 LINE 帳號；透過您的帳號進行的操作，視為您本人的操作。</li>
+    </ul>
+    <h3>三、使用者上傳的內容</h3>
+    <ul>
+      <li>您上傳的主視覺圖片與名單，應為您有權使用的內容；名單上的姓名應為您有正當理由聯繫的對象。</li>
+      <li>不得上傳或產生違法、侵害他人權利（包括著作權、商標權、肖像權、隱私權）、詐騙、色情、暴力，或違反菸酒廣告等相關法規的內容。</li>
+      <li>若發現違反上述規定，我們得暫停或終止該帳號的使用，已違規使用的場數不予退款。</li>
+      <li>邀請卡的內容與發送對象由使用者自行決定並負責，我們不負責審查邀請卡內容，也不參與您與客人之間的任何約定或交易。</li>
+    </ul>
+    <h3>四、服務的變更與中斷</h3>
+    <ul>
+      <li>我們會盡力維持服務正常運作，但可能因系統維護、第三方服務（如 LINE、雲端主機、AI 服務）異常或不可抗力而暫時中斷。</li>
+      <li>方案內容或價格如有調整，會事先公告於本頁及 LINE 官方帳號；已購買的場數不受影響。</li>
+    </ul>
+    <h3>五、責任限制</h3>
+    <p>AI 自動排版的結果僅供參考，使用者可以自行調整名字的位置與樣式，並應於傳送前確認內容正確。因使用本服務所生之損害，我們的賠償責任以您該次購買所支付的金額為上限，但因我們的故意或重大過失所致者，不在此限。</p>
+    <h3>六、準據法與管轄</h3>
+    <p>本條款以中華民國法律為準據法。如有爭議，雙方同意以臺灣臺北地方法院為第一審管轄法院。</p>
+  </section>
+
+  <section id="privacy">
+    <h2>隱私權政策</h2>
+    <h3>我們會蒐集的資料</h3>
+    <ul>
+      <li><b>LINE 帳號資訊：</b>LINE 使用者識別碼與顯示名稱，用於辨識帳號、計算額度及回覆訊息。</li>
+      <li><b>您上傳的內容：</b>活動主視覺圖片與客人名單，只用來產生您的邀請卡。</li>
+      <li><b>交易紀錄：</b>購買的方案、金額、付款時間與付款狀態。轉帳由第三方金流服務處理，我們不會取得您的銀行帳戶密碼或完整卡號。</li>
+      <li><b>使用紀錄：</b>AI 排版次數等服務使用紀錄，用於計算成本與改善服務。</li>
+    </ul>
+    <h3>資料的使用與分享</h3>
+    <ul>
+      <li>資料只用於提供本服務、處理付款與客服，不會出售或提供給他人作行銷用途。</li>
+      <li>AI 排版時，主視覺圖片（不含名單）會傳送給 AI 服務供應商 Anthropic 分析放名字的位置；我們不會把名單傳給 AI 服務。</li>
+      <li>資料存放於雲端服務 Supabase 的主機（位於日本東京），網頁由 Netlify 提供。</li>
+      <li>除依法令要求外，我們不會將您的資料提供給其他第三方。</li>
+    </ul>
+    <h3>您的權利</h3>
+    <p>您可以隨時透過 LINE 官方帳號要求查詢、更正或刪除您的資料，包括已上傳的主視覺與名單。刪除後，相關的邀請卡將無法再開啟。交易紀錄依稅務等法令需要保存者，將於法定期間屆滿後刪除。</p>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <div class="card">
+      <p style="margin:0">經營者：林子涵<br>
+      LINE 官方帳號：<a href="https://line.me/R/ti/p/@939nurdq">@939nurdq</a>（最快）<br>
+      Email：<a href="mailto:beccalin.8359@gmail.com">beccalin.8359@gmail.com</a><br>
+      客服時間：週一至週五 10:00～18:00，LINE 留言會在 1 個工作天內回覆</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">© 2026 一鍵點名　本頁最後更新：2026 年 11 月 11 日</footer>
+</body>
+</html>
